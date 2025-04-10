@@ -10,7 +10,7 @@ Este proyecto es una API RESTful construida con Laravel que permite a los usuari
 Las rutas protegidas están aseguradas mediante autenticación JWT.
 
 ---
-
+---
 ## 🛠 Instalación
 
 1. Clonar el repositorio:
@@ -38,11 +38,14 @@ php artisan jwt:secret
 8.Levantar el servidor de desarrollo:
 php artisan serve
 
+---
 
 🔐 Autenticación con JWT
 La API utiliza JWT (JSON Web Tokens) para autenticar usuarios.
 Las rutas protegidas requieren que se incluya el token en el encabezado:
 Authorization: Bearer {token}
+
+---
 
 📦 Endpoints
 La API permite:
@@ -58,6 +61,7 @@ Logout y renovación de token
 📘 Consultá todos los endpoints y ejemplos en la colección Postman:
 📄 docs/laravel-jwt-api.postman_collection.json
 
+---
 
 🧬 Relación entre Tablas
 La relación entre los modelos es la siguiente:
@@ -66,6 +70,7 @@ Un User puede tener muchos Posts
 
 Cada Post pertenece a un único User
 
+---
 
 ✅ Funcionalidades implementadas
  Registro y login con JWT
@@ -88,6 +93,7 @@ Cada Post pertenece a un único User
 
  Documentación con Swagger (opcional)
 
+---
 
  🧪 Tecnologías utilizadas
 PHP 8+
@@ -100,6 +106,7 @@ JWT con tymon/jwt-auth
 
 Postman
 
+---
 
 ✍️ Autor
 Desarrollado por Gonzalo Negro
