@@ -5,7 +5,6 @@
 </p>
 
 # Laravel JWT API
-
 Este proyecto es una API RESTful construida con Laravel que permite a los usuarios registrarse, autenticarse y realizar operaciones CRUD sobre publicaciones (posts).  
 Las rutas protegidas están aseguradas mediante autenticación JWT.
 
@@ -15,28 +14,34 @@ Las rutas protegidas están aseguradas mediante autenticación JWT.
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
-   cd tu-repo
+   git clone https://github.com/GonzaloNegro/laravel-api-posts
+   cd laravel-api-posts
 
 2. Instalar dependencias:
-composer install
+    ```bash
+    composer install
 
 3. Copiar el archivo .env de ejemplo:
-cp .env.example .env
+    ```bash
+    cp .env.example .env
 
 4. Generar la clave de la aplicación:
-php artisan key:generate
+    ```bash
+    php artisan key:generate
 
 5. Configurar la base de datos en el archivo .env.
 
 6. Ejecutar las migraciones:
-php artisan migrate
+    ```bash
+    php artisan migrate
 
-7.Instalar el paquete JWT:
-php artisan jwt:secret
+7. Instalar el paquete JWT:
+    ```bash
+   php artisan jwt:secret
 
-8.Levantar el servidor de desarrollo:
-php artisan serve
+9. Levantar el servidor de desarrollo:
+    ```bash
+    php artisan serve
 
 ---
 
@@ -92,6 +97,18 @@ Cada Post pertenece a un único User
  Subida a GitHub (pendiente)
 
  Documentación con Swagger (opcional)
+
+---
+
+## 🧩 Documentación Adicional
+
+📌 **Colección Postman:**  
+Podés importar esta colección en Postman para probar los endpoints rápidamente:  
+[`Laravel JWT API Project.postman_collection.json`](docs/Laravel%20JWT%20API%20Project.postman_collection.json)
+
+📌 **Relación entre tablas:**  
+Esta imagen muestra cómo se relacionan las tablas del sistema:  
+![Relación entre tablas](docs/relacion-tablas.jpeg)
 
 ---
 
